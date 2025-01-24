@@ -33,11 +33,11 @@ header {
 header .logo {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Space between logo and title */
+    margin-right: 20px; /* Space between logo and title */
 }
 
 header .logo img {
-    width: 25px; /* Make the logo smaller */
+    width: 15px; /* Make the logo smaller */
     height: auto;
 }
 
