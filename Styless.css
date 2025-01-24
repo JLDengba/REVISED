@@ -12,14 +12,6 @@ body {
     color: #333;
 }
 
-h2, h3 {
-    color: #333;
-}
-
-p {
-    font-size: 1rem;
-}
-
 /* Header Styles */
 header {
     background-color: #333;
@@ -33,22 +25,24 @@ header {
 header .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Space between logo and title */
+    margin-right: 10px; /* Space between logo and title */
 }
 
 header .logo img {
-    width: 50px; /* Adjust logo size */
+    width: 25px; /* Make the logo smaller */
     height: auto;
-    margin-right: 10px; /* Space between logo and title */
 }
 
 header .logo h1 {
     margin: 0;
+    font-size: 2rem; /* Title size */
+    color: white; /* Ensure the title is white */
 }
 
 /* Navigation Styles */
 nav {
-    position: relative;
+    background-color: #444; /* Navigation background color */
+    width: 100%;
 }
 
 .nav-list {
@@ -56,6 +50,7 @@ nav {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .nav-list li {
@@ -66,6 +61,13 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
+    padding: 10px;
+    display: block;
+}
+
+.nav-list li a:hover {
+    background-color: #333; /* Hover effect */
+    border-radius: 5px;
 }
 
 /* Mobile Menu (Hamburger) Icon */
