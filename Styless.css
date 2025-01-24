@@ -42,7 +42,7 @@ header .logo img {
 header .logo h1 {
     margin: 0;
     font-size: 2.8rem; /* Eye-catching title size */
-    color: #ffcc00; /* Accent color for the title */
+    color: #FFFFFF; /* Accent color for the title */
     font-weight: bold;
     text-transform: uppercase; /* Uppercase for emphasis */
     letter-spacing: 2px; /* Slight letter spacing for style */
