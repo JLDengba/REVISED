@@ -12,37 +12,46 @@ body {
     color: #333;
 }
 
-/* Header Styles */
+/* Enhanced Header Styles */
 header {
-    background-color: #333;
+    background-color: #222; /* Slightly darker background */
     color: white;
-    padding: 20px;
+    padding: 30px 50px; /* Increase padding for spacious look */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
+/* Logo Section */
 header .logo {
     display: flex;
-    align-items: center;
-    margin-right: 10px; /* Space between logo and title */
+    align-items: center; /* Align logo and text vertically */
+    margin-right: 20px; /* Space between logo and title */
 }
 
 header .logo img {
-    width: 40px; /* Make the logo smaller */
+    width: 60px; /* Larger, balanced logo size */
     height: auto;
+    border-radius: 50%; /* Circular logo for a polished look */
+    border: 3px solid white; /* Border around logo */
+    margin-right: 15px; /* Space between logo and title */
 }
 
 header .logo h1 {
     margin: 0;
-    font-size: 4rem; /* Title size */
-    color: white; /* Ensure the title is white */
+    font-size: 2.5rem; /* Slightly smaller for balance */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Add spacing between letters */
+    color: #fff; /* Ensure text is white */
 }
 
 /* Navigation Styles */
 nav {
     background-color: #444; /* Navigation background color */
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for separation */
 }
 
 .nav-list {
@@ -152,68 +161,4 @@ nav {
 .car h3 {
     margin: 15px 0;
     font-size: 1.2rem;
-}
-
-/* Section Styles */
-section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    text-align: center;
-}
-
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .car-models {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .car img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    section {
-        padding: 20px 10px;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
 }
