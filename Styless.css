@@ -30,10 +30,19 @@ header {
     justify-content: center;
 }
 
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 header .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Space between logo and title */
+    margin-right: 10px; /* Space between logo and title */
 }
 
 header .logo img {
@@ -43,7 +52,8 @@ header .logo img {
 
 header .logo h1 {
     margin: 0;
-    font-size: 2rem; /* Adjust title size if needed */
+    font-size: 2rem; /* Title size */
+    color: white; /* Ensure the title is white */
 }
 
 /* Navigation Styles */
