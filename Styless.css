@@ -12,31 +12,50 @@ body {
     color: #333;
 }
 
-/* Header Styles */
 header {
-    background-color: #333;
+    background-color: #222; /* Slightly darker background */
     color: white;
-    padding: 20px;
+    padding: 30px 50px; /* Increase padding for spacious look */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
+/* Logo Section */
 header .logo {
     display: flex;
-    align-items: center;
-    margin-right: 10px; /* Space between logo and title */
+    align-items: center; /* Align logo and text vertically */
+    margin-right: 20px; /* Space between logo and title */
 }
 
 header .logo img {
-    width: 40px; /* Make the logo smaller */
+    width: 60px; /* Larger, balanced logo size */
     height: auto;
+    border-radius: 50%; /* Circular logo for a polished look */
+    border: 3px solid white; /* Border around logo */
+    margin-right: 15px; /* Space between logo and title */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Soft shadow for logo */
 }
 
+/* Title Section */
 header .logo h1 {
     margin: 0;
-    font-size: 4rem; /* Title size */
-    color: white; /* Ensure the title is white */
+    font-size: 2.8rem; /* Eye-catching title size */
+    color: #ffcc00; /* Accent color for the title */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Slight letter spacing for style */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Tagline or Header Paragraph */
+header p {
+    font-size: 1.2rem; /* Comfortable font size */
+    color: #ccc; /* Soft grey for a subtle look */
+    margin-top: 10px;
+    line-height: 1.8; /* Improve readability */
+    max-width: 600px; /* Limit the width for better layout */
 }
 
 /* Navigation Styles */
