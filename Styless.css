@@ -1,179 +1,138 @@
-/* Global Styles */
-* {
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-h2, h3 {
-    color: #333;
-}
-
-p {
-    font-size: 1rem;
-}
-
 /* Header Styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
 }
 
-header .logo h1 {
+header .logo img {
+    max-height: 50px; /* Logo size */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-/* Navigation Styles */
-nav {
-    position: relative;
+.nav-list li {
+    margin-left: 15px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+.nav-list a {
     text-decoration: none;
-    font-size: 1.1rem;
+    color: #fff;
+    transition: color 0.3s;
 }
 
-/* Mobile Menu (Hamburger) Icon */
+.nav-list a:hover {
+    color: #ffd700; /* Highlight on hover */
+}
+
+/* Responsive Menu Toggle */
 .menu-toggle {
     display: none;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: 20px;
-    right: 20px;
     cursor: pointer;
+    font-size: 24px;
+    color: #fff;
 }
 
-/* Car Models Layout */
-.car-models {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-    padding: 20px;
-    margin: 0 auto;
+#menu-toggle {
+    display: none; /* Hide the checkbox */
 }
 
-.car {
-    flex: 1;
-    min-width: 280px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+#menu-toggle:checked + label + .nav-list {
+    display: block; /* Show menu in mobile view */
 }
 
-.car img {
-    width: 100%;
-    border-radius: 8px;
-    height: auto;
-}
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Hide menu initially in mobile view */
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border-radius: 5px;
+    }
 
-.car h3 {
-    margin: 15px 0;
-    font-size: 1.2rem;
+    .nav-list li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle for mobile */
+    }
 }
 
 /* Section Styles */
 section {
-    padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 1200px;
+    padding: 20px;
     text-align: center;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+#home {
+    background: #f4f4f4;
+    padding: 50px 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
+#cars {
+    background: #fff;
+    padding: 50px 20px;
 }
 
-ul li {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+#contact {
+    background: #f4f4f4;
+    padding: 50px 20px;
+}
+
+/* Car Models Grid */
+.car-models {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.car p {
+    color: #666;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
 }
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-    /* Hide the navigation links initially */
-    nav ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0;
-    }
-
-    /* Show the menu when checkbox is checked */
-    #menu-toggle:checked + .nav-list {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Stack car models vertically on small screens */
-    .car-models {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Adjust image sizes for small screens */
-    .car img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    /* Adjust section padding */
-    section {
-        padding: 20px 10px;
-    }
-
-    /* Adjust font size for mobile */
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.1rem;
-    }
+footer p {
+    margin: 0;
 }
