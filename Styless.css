@@ -30,30 +30,20 @@ header {
     justify-content: center;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 header .logo {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Space between logo and title */
+    margin-right: 20px; /* Space between logo and title */
 }
 
 header .logo img {
-    width: 25px; /* Make the logo smaller */
+    width: 50px; /* Adjust logo size */
     height: auto;
+    margin-right: 10px; /* Space between logo and title */
 }
 
 header .logo h1 {
     margin: 0;
-    font-size: 2rem; /* Title size */
-    color: white; /* Ensure the title is white */
 }
 
 /* Navigation Styles */
@@ -61,18 +51,18 @@ nav {
     position: relative;
 }
 
-nav ul {
+.nav-list {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
+.nav-list li {
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-list li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
