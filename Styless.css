@@ -29,13 +29,13 @@ header .logo {
 }
 
 header .logo img {
-    width: 25px; /* Make the logo smaller */
+    width: 30px; /* Make the logo smaller */
     height: auto;
 }
 
 header .logo h1 {
     margin: 0;
-    font-size: 2rem; /* Title size */
+    font-size: 10rem; /* Title size */
     color: white; /* Ensure the title is white */
 }
 
