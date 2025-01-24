@@ -33,17 +33,17 @@ header {
 header .logo {
     display: flex;
     align-items: center;
-    margin-right: 20px; 
+    margin-right: 10px; /* Space between logo and title */
 }
 
 header .logo img {
-    width: 30px; 
+    width: 25px; /* Make the logo smaller */
     height: auto;
-    margin-right: 10px; /* Space between logo and title */
 }
 
 header .logo h1 {
     margin: 0;
+    font-size: 2rem; /* Adjust title size if needed */
 }
 
 /* Navigation Styles */
